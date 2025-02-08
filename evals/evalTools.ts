@@ -65,7 +65,7 @@ export const saveSet = async (
     ...run,
     createdAt: new Date().toISOString(),
   }))
-
+  
   const newSet = {
     runs: runsWithTimestamp,
     score: calculateAvgScore(runsWithTimestamp),

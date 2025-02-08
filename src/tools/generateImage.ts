@@ -8,7 +8,9 @@ export const generateImageToolDefinition = {
     prompt: z
       .string()
       .describe(
-        `prompt for the image. Be sure to consider the user's original message when making the prompt. If you are unsure, then as the user to provide more details.`
+        `prompt for the image. Be sure to consider the user's original message when making the prompt. If you are unsure, then as the user to provide more details.
+        taking a photo means generating an image.
+        `
       ),
   }),
   description: 'generate an image',
